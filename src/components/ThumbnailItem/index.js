@@ -8,12 +8,8 @@ const ThumbnailItem = props => {
   const onSelected = () => updateImageId(id)
 
   return (
-    <li>
-      <button
-        type="button"
-        className={`thumbnail ${activeClassName}`}
-        onClick={onSelected}
-      >
+    <li className={`thumbnail ${activeClassName}`}>
+      <button type="button" onClick={onSelected}>
         <img src={thumbnailUrl} alt={thumbnailAltText} />
       </button>
     </li>
